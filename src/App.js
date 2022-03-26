@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Home from "./components/Home";
+import Logged from "./components/Logged"
 
 function App() {
+
+  const [login, setLogin] = useState(false);
+  const [rating, setRating] = useState(0);
+
+  function updateLogin(val){
+    setLogin(true);
+    setRating(val);
+    console.log(val)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Section font-link">
+        {!login ? <Home update={updateLogin}/> : <Logged updatedRating ={rating}/> }
+      </div>
     </div>
   );
 }

@@ -1,13 +1,205 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  margin: 0%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: hsl(216, 12%, 8%);
 }
 
+* {
+}
+
+.App {
+  background: hsl(213, 19%, 18%);
+  border-radius: 36px;
+  padding: 10px;
+  width: 366px;
+  margin: 200px;
+  height: 351px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Section {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 25px;
+  height: 225px;
+  /* border: 2px solid white; */
+}
+.Section h1 {
+  color: white;
+  margin: -10px 3px;
+  font-size: 26px;
+  word-spacing: 4px;
+}
+
+.Section p {
+  color: rgb(196, 193, 193);
+  font-size: 15px;
+  padding: 4px;
+  line-height: 147%;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.font-link {
+  font-family: "Overpass", sans-serif;
+}
+
+.ButtonClass {
+}
+
+.ButtonClass button {
+  background-color: hsl(212, 18%, 14%);
+  border: none;
+  color: rgb(131 131 131);
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 51px;
+  margin: 6px;
+  margin-bottom: 13px;
+  margin-left: 10px;
+}
+
+.ButtonClass button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+.ButtonClass button:focus {
+  background-color: hsl(216, 12%, 54%);
+  color: white;
+}
+
+.SubmitButton button {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  border: none;
+  padding: 15px 129px;
+  margin: 10px;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 2px;
+  letter-spacing: 2px;
+}
+
+.stButtonClass button {
+  background-color: hsl(212, 18%, 14%);
+  border: none;
+  color: rgb(189, 183, 183);
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 42px;
+  margin: 0px 0px;
+  margin-bottom: 29px;
+  margin-top: 19px;
+}
+
+.rating {
+  color: hsl(25, 97%, 53%);
+  font-size: 14px;
+  background-color: hsl(212, 18%, 14%);
+  border-radius: 25px;
+  margin: 8px 62px;
+  padding: 9px 0px;
+  text-align: center;
+}
+
+.finalWords h1 {
+  margin-top: 25px;
+  margin-left: 0px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.finalWords p {
+  color: rgb(196, 193, 193);
+  font-size: 15px;
+  padding: 4px;
+  text-align: center;
+  width: 21rem;
+  line-height: 147%;
+}
+
+.ratingImage {
+  margin: 15px;
+  margin-left: 83px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 300px) {
+  .App {
+    margin-left: 576px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .App {
+    margin-left: 164px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1440px) {
+  .App {
+    margin-left: 164px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (min-width: 301px) and (max-width: 401px) {
+.App {
+    margin-left: 440px;
+    align-items: center;
+    justify-content: center;
+}
+}
+@media screen and (min-width:401px) and (max-width: 500px) {
+  .App {
+      margin-left: 440px;
+      align-items: center;
+      justify-content: center;
+  }
+  }
+  @media screen and (min-width:501px) and (max-width: 615px) {
+    .App {
+        margin-left: 279px;
+        align-items: center;
+        justify-content: center;
+    }
+    }
