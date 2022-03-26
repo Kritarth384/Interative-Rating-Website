@@ -33,11 +33,11 @@ function Home(props) {
         <button onClick={updateRating} value={5}>5</button>
       </div>
       <div className="SubmitButton">
-        <button type="submit" onClick={() => {
+        <button type="submit font-link" onClick={() => {
             props.update(rating)
         }}>SUBMIT</button>
       </div>
-      
+
     </div>
   );
 }
